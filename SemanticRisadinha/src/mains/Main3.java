@@ -44,7 +44,7 @@ public class Main3 {
 //            Log.LOG_RIS.addHandler(logFile);
             Log.LOG_RIS.setLevel(Level.INFO);
             BlogJsonAccess blog = new BlogJsonAccess("http://www.drrisadinha.org.br/",
-                    "AIzaSyBrWRP49pj7dSMObLwW3WM4s5agG5yO9ds");
+                    key);
             BlogHeader header = blog.getBlogHeader();
             
             System.out.println("Blog " + header.getName()
